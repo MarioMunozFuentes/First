@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This is the main"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark">
+
+    </TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
