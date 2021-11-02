@@ -22,6 +22,11 @@
         tools:ignore="OnClick">
 
     </View>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fondoSplash">
+    </ImageView>
 
     <ImageView
         android:id="@+id/bolt"
@@ -34,6 +39,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="STRONG"
+        android:textSize="50dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bolt"
+        android:layout_marginTop="30dp">
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
