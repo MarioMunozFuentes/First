@@ -28,15 +28,15 @@ public class SplashScreen extends AppCompatActivity {
 
         //implementar animacion
         ImageView mBolt= findViewById(R.id.bolt);
-        Animation myanim= AnimationUtils.loadAnimation(this, R.anim.fadein);
-        mBolt.startAnimation(myanim);
+        /*Animation myanim= AnimationUtils.loadAnimation(this, R.anim.fadein);
+        mBolt.startAnimation(myanim);*/
 
         Animation rotate= AnimationUtils.loadAnimation(this, R.anim.rotate_animation1);
         mBolt.startAnimation(rotate);
 
         openApp(true);
 
-
+        //implementar fondo del splash, cargandolo desde una URL
         ImageView mBack= findViewById(R.id.fondoSplash);
         Glide.with(this)
                 .load("https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80")

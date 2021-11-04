@@ -20,8 +20,8 @@
         android:onClick="clickSplash"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="OnClick">
-
     </View>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,6 +45,7 @@
         android:layout_height="wrap_content"
         android:hint="STRONG"
         android:textSize="50dp"
+        android:fontFamily="@font/fuentelogo"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
