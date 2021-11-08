@@ -19,7 +19,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 /**
  * @author Asier97am
- * trabajando en mejora de animación
+ * trabajando en mejora de animación a
  */
 
 public class SplashScreen extends AppCompatActivity {
