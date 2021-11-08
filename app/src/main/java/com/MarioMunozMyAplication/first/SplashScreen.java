@@ -31,19 +31,19 @@ public class SplashScreen extends AppCompatActivity {
         //openApp(true);
 
         //implementar animacion
-        ImageView mBolt= findViewById(R.id.bolt);
+        ImageView mMuscle= findViewById(R.id.muscle);
         /*Animation myanim= AnimationUtils.loadAnimation(this, R.anim.fadein);
         mBolt.startAnimation(myanim);*/
 
         Animation rotate= AnimationUtils.loadAnimation(this, R.anim.rotate_animation1);
-        mBolt.startAnimation(rotate);
+        mMuscle.startAnimation(rotate);
 
         openApp(true);
 
         //implementar fondo del splash, cargandolo desde una URL
         ImageView mBack= findViewById(R.id.fondoSplash);
         Glide.with(this)
-                .load("https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80")
+                .load(R.drawable.gymfondo)
                 //.load(R.drawable.girl)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
                 .centerCrop()

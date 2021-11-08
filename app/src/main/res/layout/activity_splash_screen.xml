@@ -6,52 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha="0.5"
-        android:background="@drawable/gradient"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="clickSplash"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="OnClick">
-    </View>
-
     <ImageView
+        android:id="@+id/fondoSplash"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fondoSplash">
+        app:layout_constraintStart_toStartOf="parent">
+
     </ImageView>
 
     <ImageView
-        android:id="@+id/bolt"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/icon_bolt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/muscle"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:src="@drawable/gym"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/guideline11">
 
     </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="STRONG"
-        android:textSize="50dp"
         android:fontFamily="@font/fuentelogo"
+        android:hint="STRONG"
         android:textColorHint="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/muscle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bolt"
-        android:layout_marginTop="30dp">
+        app:layout_constraintTop_toTopOf="@+id/guideline11">
+
     </TextView>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 
 /**
- * @author MarioMuñozFuentes
+ * @author asier97am
  */
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,14 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //glide for loading girls
-        ImageView mGirl= findViewById(R.id.girl);
+        ImageView mFondo= findViewById(R.id.fondo);
 
         Glide.with(this)
-                .load(R.drawable.girl)
+                .load(R.drawable.brazaco)
                 .transition(DrawableTransitionOptions.withCrossFade(400))
                 //.load("https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=409&q=80")
                 //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia)))
-                .into(mGirl);
+                .into(mFondo);
 
 
     }
