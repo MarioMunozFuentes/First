@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/myMainConstraint">
-
+    android:id="@+id/myMainConstraint"
+    >
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainswipe">
     <!--
     <TextView
         android:layout_width="match_parent"
@@ -18,7 +22,7 @@
         android:textColor="@android:color/holo_red_dark">
     </TextView>-->
 
-    <TextView
+   <!-- <TextView
         android:id="@+id/textTap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +33,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView> -->
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vistaWeb">
+
+    </WebView>
 
 
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

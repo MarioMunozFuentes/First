@@ -12,7 +12,16 @@
         android:icon="@drawable/ic_menu_setting_foreground"
         android:title="Setting"
         app:showAsAction="always" />
-    <item>
+    <item
+        android:id="@+id/aboutas"
+        android:title="About us"
+        app:showAsAction="ifRoom">
 
+    </item>
+
+    <item
+        android:id="@+id/singout"
+        android:title="Singout"
+        app:showAsAction="ifRoom">
     </item>
 </menu>
