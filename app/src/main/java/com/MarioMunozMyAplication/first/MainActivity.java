@@ -1,5 +1,7 @@
 package com.MarioMunozMyAplication.first;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -12,10 +14,12 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 /**
@@ -100,17 +104,60 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id= item.getItemId();
 
-        if (id == R.id.camera){
-            Toast toast= Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
+
+    public void showAlertDialogButtonClicked(MainActivity MainActivity){
+        MaterialAlertDialogBuilder builder= new MaterialAlertDialogBuilder(this);
+        //el dialogo estandar tiene el titulo/icono pero podemos sustituirlo con un xml
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.usericon);
+        builder.setCancelable(false);
+        // un XML a medida para el diálogo
+        //builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        //add the buttons
+        builder.setPositiveButton("SignUp", new DialogInterface.OnClickListener() {
+        @Override
+            public void onClick(DialogInterface dialog, int which){
+            // do something like...
+            Intent intent = new Intent(MainActivity.this, SingUp.class);
+            startActivity(intent);
+            dialog.dismiss();
+        }
+        });
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                dialog.dismiss();
+            }
+        });
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.item1) {
+        //showAlertDialogButtonClicked(Main.this);
+            Toast toast = Toast.makeText(this, "Infecting", Toast.LENGTH_LONG);
             toast.show();
         }
-        if (id== R.id.action_settings){
-            Toast toast= Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+        if (id == R.id.item2) {
+            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        if (id == R.id.singout) {
+            showAlertDialogButtonClicked(MainActivity.this);
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

@@ -16,9 +16,7 @@
         android:id="@+id/aboutas"
         android:title="About us"
         app:showAsAction="ifRoom">
-
     </item>
-
     <item
         android:id="@+id/singout"
         android:title="Singout"

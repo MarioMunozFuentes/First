@@ -2,7 +2,7 @@
 
 ## Building Android - Mario Muñoz Fuentes
 
-1. El primer título es el nombre de tu proyecto.
+1. El primer ~~título~~ es el **nombre** de tu proyecto.
 2. El texto siguiente es una descripción simple y corta del contexto de tu proyecto.
 3. Agrega un link a un demo con el proyecto desplegado.
 4. Si es requerido, agrega una lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.

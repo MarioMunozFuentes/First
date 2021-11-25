@@ -14,4 +14,10 @@
         app:showAsAction="ifRoom|withText">
     </item>
 
+    <item
+        android:id="@+id/item3"
+        android:title="New"
+        app:showAsAction="ifRoom|withText">
+    </item>
+
 </menu>
