@@ -18,6 +18,6 @@ Decidí que iba a ser sobre un gimnasio, ya que tambien habia hecho la pagina we
 
 
 
-![issue tab](img/inicioapp.gif)
-![issue tab](img/giphy.mp4)
+
+![issue tab](img/giphy.gif)
 
