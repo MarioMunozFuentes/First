@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         swipeLayout.setOnRefreshListener(mOnRefreshListener);
 
         miVisorWeb= (WebView) findViewById(R.id.vistaWeb);
-        //registerForContextMenu(miVisorWeb);
+        registerForContextMenu(miVisorWeb);
 
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");

@@ -34,7 +34,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.6"
+            android:alpha="0.4"
             android:hint="Usuario"
             android:maxLines="1"
             tools:ignore="SpeakableTextPresentCheck"></EditText>
@@ -57,7 +57,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.6"
+            android:alpha="0.4"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toBottomOf="@id/til2"
         />
-    
+
     <Button
         android:id="@+id/button2"
         style="@style/myButtonInverse"
@@ -91,14 +91,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.26" />
+        app:layout_constraintGuide_percent="0.2" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.74" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <TextView
         android:id="@+id/registro"
