@@ -14,7 +14,8 @@
         <activity
             android:name=".SingUp"
             android:exported="true"
-            android:theme="@style/ActionTheme"/>
+            android:theme="@style/ActionTheme"
+            android:parentActivityName=".LoginActivity"/>
 
         <activity
             android:name=".MainActivity"
