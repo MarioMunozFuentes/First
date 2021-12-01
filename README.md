@@ -36,15 +36,18 @@ En la parte del Status Bar hemos incluido dos iconos, uno de una lupa y otro de 
 Si pinchamos en la opción de ***"SingUp"*** nos aparece un diálogo de alerta en el cual si pinchamos en *"Other"* nos vuelve a la página en la que estábamos, en cambio si pinchamos en *"SingUp"* accedemos a la ventana *"SingUp"*.
 
 ######   4.2.1 SingUp
-
+En esta parte únicamente llamamos al *"activity_sing_up"*.
 
 ######   4.2.1 SplashScreen
+Aqui creamos la animación que aparece cuando se inicia la aplicación, insertando la imagen, el efecto, el tiempo que va a durar...
 
-#### 4.3. MANIFEST:
 
-#### 4.4. MANIFEST:
+#### 4.3. RES:
 
-#### 4.. MANIFEST:
+######   4.2.1 SplashScreen
+######   4.2.1 SplashScreen
+######   4.2.1 SplashScreen
+######   4.2.1 SplashScreen
 
 ## 5. **:**
 
