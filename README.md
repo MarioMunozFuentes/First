@@ -63,18 +63,22 @@ A continuación voy a dejar una serie de fotos y gif en los cuales se va ver vis
 Formado por dos entradas de texto (*Usuario* y *Contraseña*).
 Dos botones, ***Entrar*** nos lleva a la página de *main* y el botón ***Registrarse*** nos lleva a la página *SingUp*.
 Por último tenemos un cuadro de texto, con un eslogan.
+
 ![issue tab](img/login.png)
 
 #### 5.2. ACTIVITY_MAIN:
 Ventana principal de nuestra app, tenemos un *appbar* en la cual hay dos iconos y luego desde los 3 puntitos podemos dar a *SingUp* y nos aparece un cuadro de alerta, en este si pulsamos de nuevo en *SingUp* nos lleva a la pagina de *Login*.
 En esta ventana también tenemos un ***"Refresh"*** el cual genera carasde personas que no existen a partir de una página web.
 Por ultimo si pinchamos en la imagen con un click largo, nos aparecen las opciones *"Copy"*, *"Download"* y *"New"*.
+
 ![issue tab](img/main.gif)
 
 #### 5.3. ACTIVITY_SING_UP:
+
 ![issue tab](img/singup.png)
 
 #### 5.4. ACTIVITY_SPLASH_SCREEN:
+
 ![issue tab](img/animacioninicio.gif)
 
 ## 6. **CONCLUSIONES:**
