@@ -56,8 +56,20 @@ Hemos creado alguna carpeta para dar alguna nueva funcionalidad a nuestro proyec
 También hemos añadido la animación del inicio de la app.
 Otra carpeta que hemos añadido nosotros ha sido la de ***"menu"*** en la cual hemos creado el *"menu_context"* en el cual hemos situado las diferentes opciones del *"appbar"* (barra superior de la aplicación), y también hemos creado *"menu_main"* el cual recoge los iconos del *"appbar"* del *main*.
 
-## 5. **:**
+## 5. **PARTE VISUAL:**
+A continuación voy a dejar una serie de fotos y gif en los cuales se va ver visualmente las partes de mi aplicación.
 
+#### 5.1. ACTIVITY_LOGIN:
+![issue tab](img/login.png)
 
-## 6. **:**
+#### 5.2. ACTIVITY_MAIN:
+![issue tab](img/main.gif)
+
+#### 5.3. ACTIVITY_SING_UP:
+![issue tab](img/singup.png)
+
+#### 5.4. ACTIVITY_SPLASH_SCREEN:
+![issue tab](img/animacioninicio.gif)
+
+## 6. **CONCLUSIONES:**
 
