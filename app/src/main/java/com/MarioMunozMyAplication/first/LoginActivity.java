@@ -39,8 +39,9 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onClick(View v) {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        //con lo siguiente si lo ponemos no nos vuelve hacia atras
+       /* intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);*/
         startActivity(intent);
     }
 

@@ -43,11 +43,18 @@ Aqui creamos la animación que aparece cuando se inicia la aplicación, insertan
 
 
 #### 4.3. RES:
+Aquí encontramos los recursos necesarios para que la aplicación pueda funcionar.
 
-######   4.2.1 SplashScreen
-######   4.2.1 SplashScreen
-######   4.2.1 SplashScreen
-######   4.2.1 SplashScreen
+######   4.3.1 Drawable y mipmap
+Aquí podemos encontrar las imágenes y vectores que usamos en la aplicación, como son el logo y los diferentes iconos.
+
+######   4.3.2 Layout
+En esta carpeta encontramos una de las partes fundamentales de la aplicación, que son los archivos ***".xml"*** en los cuáles seleccionamos lo que vamos a ver en nuestra aplicación y lo que no.
+
+######   4.3.3 Creadas por nosotros
+Hemos creado alguna carpeta para dar alguna nueva funcionalidad a nuestro proyecto, estas carpetas han sido ***"font"*** en la cual hemos añadido la fuente que hemos usado en el logo *"Sigmar One Regular"*.
+También hemos añadido la animación del inicio de la app.
+Otra carpeta que hemos añadido nosotros ha sido la de ***"menu"*** en la cual hemos creado el *"menu_context"* en el cual hemos situado las diferentes opciones del *"appbar"* (barra superior de la aplicación), y también hemos creado *"menu_main"* el cual recoge los iconos del *"appbar"* del *main*.
 
 ## 5. **:**
 
