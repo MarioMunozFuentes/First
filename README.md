@@ -74,10 +74,14 @@ Por ultimo si pinchamos en la imagen con un click largo, nos aparecen las opcion
 ![issue tab](img/main.gif)
 
 #### 5.3. ACTIVITY_SING_UP:
+En esta ventana, tenemos un formulario de registro, al cual podemos acceder desde el *activity_login* o desde el *activity_main*.
 
 ![issue tab](img/singup.png)
 
 #### 5.4. ACTIVITY_SPLASH_SCREEN:
+A continuación vemos un *gif* de como inicia la aplicación.
+En este *splash_screen* hemos podemos ver el nombre de nuestra app ***STRONG*** en la el cual hemos cambiado la fuente, por la indicada anteriormente.
+En el logo hemos implementado una animación.
 
 ![issue tab](img/animacioninicio.gif)
 
