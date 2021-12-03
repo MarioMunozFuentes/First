@@ -2,17 +2,21 @@
 
 ## DESAROLLO DE INTERFACES - MARIO MUÑOZ FUENTES
 
+
 ## 1. **INTRODUCCIÓN:**
 Para comenzar este proyecto guiado, en primer lugar hicimos un boceto utilizando el programa *Adobe XD*.
 Esto nos sirvió para comenzar a iniciarnos con el mundo del desarrollo de apps y poder partir desde ahi.
 
+
 ## 2. **PENSAR LA TEMÁTICA:**
 Pensé que una buena temática podía ser una aplicación de gymnasio, ya que es un tema que me gusta, y podría desarrollarlo bien.
+
 
 ## 3. **CREACIÓN DEL PROYECTO:**
 Para empezar elegimos una actividad en blanco la cual fuimos desarrollando y creando las distintas ventanas en ella.
 
 ![issue tab](img/1.png)
+
 
 ## 4. **DESARROLLO DEL PROYECTO:**
 ![issue tab](img/2.png)
@@ -56,6 +60,7 @@ Hemos creado alguna carpeta para dar alguna nueva funcionalidad a nuestro proyec
 También hemos añadido la animación del inicio de la app.
 Otra carpeta que hemos añadido nosotros ha sido la de ***"menu"*** en la cual hemos creado el *"menu_context"* en el cual hemos situado las diferentes opciones del *"appbar"* (barra superior de la aplicación), y también hemos creado *"menu_main"* el cual recoge los iconos del *"appbar"* del *main*.
 
+
 ## 5. **PARTE VISUAL:**
 A continuación voy a dejar una serie de fotos y gif en los cuales se va ver visualmente las partes de mi aplicación.
 
@@ -84,6 +89,4 @@ En este *splash_screen* hemos podemos ver el nombre de nuestra app ***STRONG*** 
 En el logo hemos implementado una animación.
 
 ![issue tab](img/animacioninicio.gif)
-
-## 6. **CONCLUSIONES:**
 
