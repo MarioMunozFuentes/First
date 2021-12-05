@@ -10,10 +10,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
-
-
 /**
- * @author asier97am
+ * @author Mario Muñoz Fuentes
  */
 public class LoginActivity extends AppCompatActivity {
 
@@ -31,8 +29,6 @@ public class LoginActivity extends AppCompatActivity {
                 //.load("https://images.unsplash.com/photo-1459802071246-377c0346da93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=409&q=80")
                 //.placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia)))
                 .into(mFondo);
-
-
     }
 
 
