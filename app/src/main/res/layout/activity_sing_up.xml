@@ -20,10 +20,10 @@
         android:layout_height="match_parent"
         android:alpha="0.2"
         android:background="@color/black">
-
     </View>
 
     <!-- Primer cuadro de texto rellenable-->
+    <!-- app:startIconDrawable="@drawable/persona_foreground" sirve para poner el iconito de la derecha del editText-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/InputName"
         android:layout_width="0dp"
@@ -32,8 +32,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toEndOf="@id/guideline4"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/persona_foreground"
-        >
+        app:startIconDrawable="@drawable/persona_foreground">
 
         <!-- EditText dentro del cuadro de texto-->
         <EditText
@@ -47,6 +46,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Segundo cuadro de texto rellenable-->
+    <!-- app:startIconDrawable="@drawable/pass_foreground" sirve para poner el iconito de la derecha del editText-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/contraSingup"
         android:layout_width="0dp"
@@ -59,6 +59,7 @@
         android:layout_marginTop="10dp">
 
         <!-- EditText dentro del cuadro de texto-->
+        <!-- android:maxLines="1" solo podemos escribir una linea-->
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

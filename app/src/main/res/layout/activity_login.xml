@@ -38,13 +38,12 @@
             android:layout_height="wrap_content"
             android:alpha="0.4"
             android:hint="Usuario"
-            android:maxLines="1"
-            tools:ignore="SpeakableTextPresentCheck">
+            android:maxLines="1">
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <!--Segundo campo rellenable-->
+    <!--Segundo campo rellenable -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
@@ -65,12 +64,12 @@
             android:alpha="0.4"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            android:maxLines="1"
-            tools:ignore="SpeakableTextPresentCheck">
+            android:maxLines="1">
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--Boton para entrar (con esilo creado aparte)-->
+    <!-- android:onClick="onClick" para referenciarlo en el java, tienen que tener el mismo nombre-->
     <Button
         android:id="@+id/button"
         style="@style/myButton2"
@@ -82,6 +81,7 @@
         />
 
     <!--Boton para registrarse (con estilo creado aparte)-->
+    <!--  android:onClick="openSingUp" para referenciarlo en el java, tienen que tener el mismo nombre-->
     <Button
         android:id="@+id/button2"
         style="@style/myButtonInverse"
@@ -107,6 +107,7 @@
     </TextView>
 
     <!--ImageView situado arriba (centrado con las dos GuideLine) -->
+    <!-- android:src="@drawable/gym" sirve para insertar la imagen -->
     <ImageView
         android:id="@+id/logoprincipal"
         android:layout_width="100dp"

@@ -27,18 +27,19 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
-        //openApp(true);
+        setContentView(R.layout.activity_splash_screen); //referenciamos este documento de java al xml asociado
+        openApp(true);
 
         //implementar animacion
+        //.load carga un drawable para el fondo
+        //.placeholder si no consigue cargar la foto te pone un fondo (ejemplo de instagram)
+        // .centerCrop me rellena todoo
+        //  //.into indica donde se aplican los atributos
         ImageView mMuscle= findViewById(R.id.muscle);
         /*Animation myanim= AnimationUtils.loadAnimation(this, R.anim.fadein);
         mBolt.startAnimation(myanim);*/
-
         Animation rotate= AnimationUtils.loadAnimation(this, R.anim.rotate_animation1);
         mMuscle.startAnimation(rotate);
-
-        openApp(true);
 
         //implementar fondo del splash, cargandolo desde una URL
         ImageView mBack= findViewById(R.id.fondoSplash);
@@ -52,21 +53,25 @@ public class SplashScreen extends AppCompatActivity {
                 .into(mBack);
     }
 
-   /*
-        public void clickSplash(View view) {
-        Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
-        startActivity(intent);
-    }*/
+
 
     //Esta clase sirve para abrir directamente el login
     private  void openApp(boolean locationPermission){
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
-            public void run() {
+            public void run() { //si queremos poner banderas para que no se pueda volver al Splash irian dentro del run
                 Intent intent= new Intent(SplashScreen.this, LoginActivity.class);
-                startActivity(intent);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //creamos bandera
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK); //limpiamos para no poder volver
+                startActivity(intent); //con esto vamos al la siguiente ventana indicandolo conintent
             }
-        },2000);
+        },2000); //espeamos 2 segundos en la animacion
     }
+
+    /* sirve para pinchar el logo e ir al main
+        public void clickSplash(View view) {
+        Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
+        startActivity(intent);
+    }*/
 
 }

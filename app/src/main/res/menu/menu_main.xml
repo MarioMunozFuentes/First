@@ -4,14 +4,14 @@
 
     <!-- Primer item del menu_main (foto de la lupa)-->
     <item
-        android:id="@+id/camera"
+        android:id="@+id/lupa"
         android:icon="@drawable/ic_menu_lupa_foreground"
         android:title="Item"
         app:showAsAction="always"/> <!-- Aparece siempre -->
 
     <!-- Segundo item del menu_main (foto de la tuerca)-->
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/tuerca"
         android:icon="@drawable/ic_menu_setting_foreground"
         android:title="Setting"
         app:showAsAction="always" /> <!-- Aparece siempre -->

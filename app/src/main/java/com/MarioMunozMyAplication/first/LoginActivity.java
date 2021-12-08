@@ -32,14 +32,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    //pinchando en el boton entrar nos lleva al main acivity, nombre del metodo es igual que el onclick del boton
     public void onClick(View v) {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         //con lo siguiente si lo ponemos no nos vuelve hacia atras
-       /* intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);*/
+       //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+       //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 
+    //pinchando en el boton registrarse nos lleva al sing up, nombre del metodo es igual que el onclick del boton
     public void openSingUp(View v) {
         Intent intent = new Intent(LoginActivity.this, SingUp.class);
         startActivity(intent);
