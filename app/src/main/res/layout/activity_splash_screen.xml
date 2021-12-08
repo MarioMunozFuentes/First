@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
 
+    <!-- ImageView en el cual va la animacion -->
     <ImageView
         android:id="@+id/fondoSplash"
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
 
     </ImageView>
 
+    <!-- Imagen de la aplicacion -->
     <ImageView
         android:id="@+id/muscle"
         android:layout_width="150dp"
@@ -26,6 +28,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline11">
     </ImageView>
 
+    <!-- TextView en el que va el nombre de la aplicacion -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,9 +40,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/muscle">
-
     </TextView>
 
+    <!-- Primera GuideLine-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
         android:layout_width="wrap_content"
@@ -47,6 +50,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.30" />
 
+    <!-- Segunda GuideLine-->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline12"
         android:layout_width="wrap_content"

@@ -2,18 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Primer item del menu_context (opcion de Copy)-->
     <item
         android:id="@+id/item1"
         android:title="Copy"
         app:showAsAction="ifRoom|withText"> <!--con never se puede poner para que aparezca en 3 puntitos-->
     </item>
 
+    <!-- Segundo item del menu_context (opcion de Download)-->
     <item
         android:id="@+id/item2"
         android:title="Download"
         app:showAsAction="ifRoom|withText">
     </item>
 
+    <!-- Tercer item del menu_context (opcion de New)-->
     <item
         android:id="@+id/item3"
         android:title="New"

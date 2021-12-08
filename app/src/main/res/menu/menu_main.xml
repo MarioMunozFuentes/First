@@ -2,24 +2,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- Primer item del menu_main (foto de la lupa)-->
     <item
         android:id="@+id/camera"
         android:icon="@drawable/ic_menu_lupa_foreground"
         android:title="Item"
-        app:showAsAction="always"/>
+        app:showAsAction="always"/> <!-- Aparece siempre -->
+
+    <!-- Segundo item del menu_main (foto de la tuerca)-->
     <item
         android:id="@+id/action_settings"
         android:icon="@drawable/ic_menu_setting_foreground"
         android:title="Setting"
-        app:showAsAction="always" />
+        app:showAsAction="always" /> <!-- Aparece siempre -->
+
+    <!-- Tercer item del menu_main (About As)-->
     <item
         android:id="@+id/aboutas"
-        android:title="About us"
-        app:showAsAction="ifRoom">
+        android:title="About As"
+        app:showAsAction="ifRoom"> <!-- Aparece siempre que haya espacio, sino en un desplegable -->
     </item>
+
+    <!-- Cuarto item del menu_main (SingOut)-->
     <item
         android:id="@+id/singout"
-        android:title="Singout"
-        app:showAsAction="ifRoom">
+        android:title="SingOut"
+        app:showAsAction="ifRoom"> <!-- Aparece siempre que haya espacio, sino en un desplegable -->
     </item>
 </menu>

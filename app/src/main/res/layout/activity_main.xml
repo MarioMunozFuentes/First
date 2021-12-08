@@ -7,41 +7,19 @@
     tools:context=".MainActivity"
     android:id="@+id/myMainConstraint"
     >
-<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/mainswipe">
-    <!--
-    <TextView
+
+    <!--Creamos un SwipeRefreshLayout (sirve para poder hacer la opcion ed refrescar la pagina)-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is the main"
-        android:textSize="50dp"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textColor="@android:color/holo_red_dark">
-    </TextView>-->
+        android:id="@+id/mainswipe">
 
-   <!-- <TextView
-        android:id="@+id/textTap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="tap me long...."
-        android:textColor="@color/fucsia"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <!--Creamos unWebView para referenciar la URL de la pagina que vamos a mostrar -->
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vistaWeb">
+        </WebView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    </TextView> -->
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/vistaWeb">
-    </WebView>
-
-
-</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

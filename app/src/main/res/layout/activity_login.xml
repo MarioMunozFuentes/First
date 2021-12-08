@@ -19,6 +19,7 @@
         android:alpha="0.4"
         android:background="@color/black"></View>
 
+    <!--Primer campo rellenable-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
@@ -30,6 +31,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:startIconDrawable="@drawable/persona_foreground">
 
+        <!--Primer EditText-->
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
@@ -37,10 +39,12 @@
             android:alpha="0.4"
             android:hint="Usuario"
             android:maxLines="1"
-            tools:ignore="SpeakableTextPresentCheck"></EditText>
+            tools:ignore="SpeakableTextPresentCheck">
+        </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <!--Segundo campo rellenable-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
@@ -53,6 +57,7 @@
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/pass_foreground">
 
+        <!--Segundo EditText-->
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -61,14 +66,14 @@
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:maxLines="1"
-            tools:ignore="SpeakableTextPresentCheck"></EditText>
+            tools:ignore="SpeakableTextPresentCheck">
+        </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--Boton para entrar (con esilo creado aparte)-->
     <Button
         android:id="@+id/button"
         style="@style/myButton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:onClick="onClick"
         android:text="ENTRAR"
         app:layout_constraintEnd_toEndOf="@id/guideline3"
@@ -76,6 +81,7 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
         />
 
+    <!--Boton para registrarse (con estilo creado aparte)-->
     <Button
         android:id="@+id/button2"
         style="@style/myButtonInverse"
@@ -86,20 +92,7 @@
         app:layout_constraintTop_toBottomOf="@id/button"
        />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
-
+    <!--TextView en el cual se pone un eslogan referente a la app-->
     <TextView
         android:id="@+id/registro"
         android:layout_width="wrap_content"
@@ -110,8 +103,10 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@id/guideline3"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/button2"></TextView>
+        app:layout_constraintTop_toBottomOf="@id/button2">
+    </TextView>
 
+    <!--ImageView situado arriba (centrado con las dos GuideLine) -->
     <ImageView
         android:id="@+id/logoprincipal"
         android:layout_width="100dp"
@@ -122,6 +117,23 @@
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
+
+    <!--GuideLine izquierda (situada al 20% del total de la pantalla)-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <!--GuideLine derecha (situada al 80% del total de la pantalla) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
