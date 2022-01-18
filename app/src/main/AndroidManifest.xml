@@ -13,14 +13,16 @@
         android:theme="@style/Theme.First">
 
         <activity
+            android:name=".BottomAppBar"
+            android:exported="true" />
+
+        <activity
             android:name=".SingUp"
             android:exported="true"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/ActionTheme" />
+            android:theme="@style/ActionTheme" /> <!-- Para volver de MainActivity a LoginActivity -->
+        <!-- android:parentActivityName=".LoginActivity" -->
 
-
-        <!-- Para volver de MainActivity a LoginActivity-->
-        <!--  android:parentActivityName=".LoginActivity" -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -30,7 +32,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.First"></activity>
+            android:theme="@style/Theme.First" />
 
         <activity
             android:name=".SplashScreen"
@@ -40,7 +42,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
