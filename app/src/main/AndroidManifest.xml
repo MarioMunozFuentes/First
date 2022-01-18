@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.MarioMunozMyAplication.first">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,27 +15,28 @@
         <activity
             android:name=".SingUp"
             android:exported="true"
-            android:theme="@style/ActionTheme"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/ActionTheme" />
 
+
+        <!-- Para volver de MainActivity a LoginActivity-->
+        <!--  android:parentActivityName=".LoginActivity" -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/ActionTheme"/>
+            android:theme="@style/ActionTheme" />
 
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.First">
-
-        </activity>
+            android:theme="@style/Theme.First"></activity>
 
         <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" /> <!-- elegimos desde donde inicia la app -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

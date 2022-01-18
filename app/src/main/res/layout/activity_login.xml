@@ -5,6 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
+    <!-- SI QUISIERAMOS AÑADIR UN GRADIENTE SERIA DE LA SIGUIENTE FORMA-->
+    <!-- android:background="@drawable/gradient" -->
+    <!-- previamente creado en la carpeta drawable(gradient)-->
+
+
 
     <ImageView
         android:id="@+id/fondo"
@@ -134,6 +139,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.8" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

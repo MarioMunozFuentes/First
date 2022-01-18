@@ -63,7 +63,7 @@ public class SplashScreen extends AppCompatActivity {
                 Intent intent= new Intent(SplashScreen.this, LoginActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //creamos bandera
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK); //limpiamos para no poder volver
-                startActivity(intent); //con esto vamos al la siguiente ventana indicandolo conintent
+                startActivity(intent); //con esto vamos al la siguiente ventana indicandolo con intent
             }
         },2000); //espeamos 2 segundos en la animacion
     }
