@@ -163,6 +163,12 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.singout) {
             showAlertDialogButtonClicked(MainActivity.this); //si pulsamos sobre singup nos aparece el dialogo de alerta
         }
+        //abre un nuevo intent con la nueva actuvity que hemos generado
+        if (id == R.id.item5){
+            Intent intent= new Intent(MainActivity.this, MainBn.class);
+            startActivity(intent);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

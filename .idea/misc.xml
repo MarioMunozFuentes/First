@@ -30,12 +30,18 @@
         <entry key="..\:/First/app/src/main/res/drawable/persona_foreground.xml" value="0.2703125" />
         <entry key="..\:/First/app/src/main/res/drawable/usericon.xml" value="0.2703125" />
         <entry key="..\:/First/app/src/main/res/layout/activity_bottom_app_bar.xml" value="0.264" />
-        <entry key="..\:/First/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/First/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/First/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/First/app/src/main/res/layout/activity_main2.xml" value="0.24954710144927536" />
+        <entry key="..\:/First/app/src/main/res/layout/activity_main_bn.xml" value="0.15579710144927536" />
         <entry key="..\:/First/app/src/main/res/layout/activity_sing_up.xml" value="0.4" />
         <entry key="..\:/First/app/src/main/res/layout/activity_splash_screen.xml" value="0.24954710144927536" />
-        <entry key="..\:/First/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.1" />
+        <entry key="..\:/First/app/src/main/res/layout/fragment_main_bn.xml" value="0.24010416666666667" />
+        <entry key="..\:/First/app/src/main/res/layout/fragment_page1.xml" value="0.23854166666666668" />
+        <entry key="..\:/First/app/src/main/res/layout/fragment_page2.xml" value="0.23854166666666668" />
+        <entry key="..\:/First/app/src/main/res/layout/fragment_page3.xml" value="0.23854166666666668" />
+        <entry key="..\:/First/app/src/main/res/layout/fragment_page4.xml" value="0.23854166666666668" />
+        <entry key="..\:/First/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.2" />
         <entry key="..\:/First/app/src/main/res/menu/menu_context.xml" value="0.4" />
         <entry key="..\:/First/app/src/main/res/menu/menu_main.xml" value="0.264" />
         <entry key="..\:/First/app/src/main/res/mipmap-anydpi-v26/contrasenna.xml" value="0.1578125" />
